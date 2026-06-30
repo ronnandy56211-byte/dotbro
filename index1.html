@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>dotBro — Some conversations deserve another chance</title>
+<title>.BRO — Alokara</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -64,7 +64,6 @@ nav {
   letter-spacing: 2px; color: var(--white);
   text-decoration: none;
 }
-.nav-logo img { width: 92px; height: auto; display: block; }
 .nav-dot {
   width: 10px; height: 10px; border-radius: 50%;
   background: var(--white); display: inline-block;
@@ -683,172 +682,6 @@ footer.site-footer {
   background: none; border: 1px solid var(--mgray); color: var(--gray); padding: 0.8rem 1.2rem; cursor: pointer;
 }
 
-/* ── LAUNCH STORY REFINEMENTS ── */
-.hero-kicker {
-  font-family: 'Space Mono', monospace; font-size: 0.68rem;
-  color: var(--red); letter-spacing: 4px; text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-.hero-reference {
-  font-family: 'Space Mono', monospace; font-size: 0.65rem;
-  color: var(--red); letter-spacing: 4px; text-transform: uppercase;
-  margin-bottom: 1.4rem; animation: fadeUp 0.8s both;
-}
-.hero-logo {
-  display: block; width: min(680px, 75vw); height: auto;
-  margin: 0 auto; filter: drop-shadow(0 24px 60px rgba(255,255,255,0.08));
-  animation: titleRise 1.2s cubic-bezier(0.16,1,0.3,1) both;
-}
-.hero-tagline {
-  font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--gray);
-  letter-spacing: 4px; text-transform: uppercase; margin-top: 1rem;
-  animation: fadeUp 1s 0.25s both;
-}
-.reference-pills {
-  display: flex; gap: 0.7rem; justify-content: center; flex-wrap: wrap;
-  margin-top: 1.4rem; animation: fadeUp 1s 0.4s both;
-}
-.reference-pill {
-  font-family: 'Bebas Neue', sans-serif; font-size: 0.85rem;
-  letter-spacing: 2px; padding: 0.55rem 1.4rem; color: var(--white);
-  border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.045);
-  backdrop-filter: blur(12px); text-decoration: none;
-}
-.reference-pill.red { border-color: rgba(209,0,0,0.5); background: rgba(209,0,0,0.14); }
-.reference-pill.green { border-color: rgba(200,212,0,0.45); color: var(--green); background: rgba(200,212,0,0.08); }
-.hero-attribution {
-  font-family: 'Space Mono', monospace; font-size: 0.58rem; color: #44443F;
-  letter-spacing: 2px; margin-top: 1.2rem; text-transform: uppercase;
-  animation: fadeUp 1s 0.55s both;
-}
-.hero-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2.3rem, 5vw, 4.8rem); line-height: 0.95;
-  letter-spacing: -1px; max-width: 860px; margin: 2rem auto 0;
-  background: linear-gradient(180deg, #fff 35%, rgba(255,255,255,0.22));
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: titleRise 1.2s cubic-bezier(0.16,1,0.3,1) both;
-}
-.hero-story {
-  max-width: 620px; margin: 2rem auto 0; color: #9A9A94;
-  font-size: clamp(1rem, 1.8vw, 1.2rem); line-height: 1.75;
-  animation: fadeUp 1s 0.35s both;
-}
-.hero-story strong { color: var(--white); font-weight: 500; }
-.cta-row { display: flex; justify-content: center; gap: 0.8rem; flex-wrap: wrap; margin-top: 2.2rem; animation: fadeUp 1s 0.55s both; }
-.primary-cta, .secondary-cta {
-  display: inline-flex; align-items: center; justify-content: center;
-  min-height: 50px; padding: 0.9rem 1.5rem; text-decoration: none;
-  font-family: 'Space Mono', monospace; font-size: 0.7rem;
-  letter-spacing: 1.5px; text-transform: uppercase; transition: all 0.25s;
-}
-.primary-cta { background: var(--white); color: var(--black); }
-.primary-cta:hover { background: var(--red); color: var(--white); transform: translateY(-2px); }
-.secondary-cta { border: 1px solid #333; color: var(--white); }
-.secondary-cta:hover { border-color: var(--white); transform: translateY(-2px); }
-
-.missed-grid, .future-grid, .audience-grid, .project-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px;
-}
-.word-card, .future-card, .audience-card, .project-card {
-  background: rgba(26,26,26,0.78); border: 1px solid rgba(255,255,255,0.035);
-  padding: 1.6rem; position: relative; overflow: hidden;
-  backdrop-filter: blur(14px); transition: transform 0.3s, background 0.3s, border-color 0.3s;
-}
-.word-card:hover, .future-card:hover, .audience-card:hover, .project-card:hover {
-  transform: translateY(-4px); background: rgba(34,34,34,0.92); border-color: rgba(255,255,255,0.12);
-}
-.word-card { font-family: 'Bebas Neue', sans-serif; font-size: 1.55rem; letter-spacing: 1px; }
-.word-card span { display: block; font-family: 'Space Mono', monospace; color: var(--red); font-size: 0.58rem; margin-bottom: 0.7rem; }
-.truth-line { margin-top: 2rem; font-size: clamp(1.35rem, 2.5vw, 2.2rem); line-height: 1.35; color: var(--gray); }
-.truth-line strong { color: var(--white); font-weight: 500; }
-
-.swap-list { margin-top: 2rem; }
-.swap-row { display: grid; grid-template-columns: 1fr 80px 1fr; align-items: center; padding: 1.2rem 0; border-bottom: 1px solid #242424; }
-.swap-from, .swap-to { font-family: 'Bebas Neue', sans-serif; font-size: clamp(1.7rem, 4vw, 3.6rem); }
-.swap-from { color: #3C3C39; }
-.swap-to { color: var(--white); text-align: right; }
-.swap-arrow { text-align: center; color: var(--red); font-family: 'Space Mono', monospace; }
-
-#s4 { background: #101010; }
-.future-grid { grid-template-columns: repeat(4, 1fr); margin-top: 2.5rem; }
-.future-card { min-height: 170px; display: flex; flex-direction: column; justify-content: space-between; }
-.future-num { font-family: 'Space Mono', monospace; font-size: 0.58rem; color: var(--gray); }
-.future-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 1px; }
-.coming { font-family: 'Space Mono', monospace; font-size: 0.56rem; letter-spacing: 1.5px; color: var(--green); text-transform: uppercase; }
-
-.audience-grid { grid-template-columns: repeat(5, 1fr); margin-top: 2.5rem; }
-.audience-card { font-family: 'Space Mono', monospace; font-size: 0.7rem; letter-spacing: 1px; min-height: 100px; display: flex; align-items: flex-end; }
-.audience-card:last-child { color: var(--green); }
-
-#projects { background: radial-gradient(circle at 75% 40%, rgba(200,212,0,0.07), transparent 34%), #0B0B0B; }
-.ventures-layout { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 5rem; align-items: center; max-width: 1100px; width: 100%; margin: 0 auto; }
-.ventures-copy .s2-sub { margin-bottom: 0; }
-.venture-stage { min-height: 560px; position: relative; perspective: 1200px; }
-.venture-card {
-  --x: calc(var(--i) * 24px); --y: calc(var(--i) * 104px); --r: calc((var(--i) - 1.5) * 0.45deg);
-  position: absolute; top: 0; left: 0; width: calc(100% - 72px); min-height: 205px;
-  transform: translate3d(var(--x), var(--y), 0) rotate(var(--r));
-  z-index: calc(10 - var(--i)); padding: 1.5rem 1.6rem;
-  display: grid; grid-template-columns: auto 1fr auto; gap: 1.3rem; align-items: start;
-  color: var(--white); text-decoration: none; overflow: hidden;
-  background: linear-gradient(135deg, rgba(255,255,255,0.115), rgba(255,255,255,0.035));
-  border: 1px solid rgba(255,255,255,0.15); border-radius: 22px;
-  box-shadow: 0 28px 70px rgba(0,0,0,0.42), inset 0 1px 0 rgba(255,255,255,0.14);
-  backdrop-filter: blur(28px) saturate(145%);
-  transition: transform 0.45s cubic-bezier(.2,.8,.2,1), border-color 0.3s, background 0.3s;
-}
-.venture-card::before {
-  content: ''; position: absolute; inset: 0; pointer-events: none;
-  background: radial-gradient(circle at 12% 0%, var(--accent-soft), transparent 43%);
-}
-.venture-card:hover { transform: translate3d(calc(var(--x) - 12px), calc(var(--y) - 8px), 42px) rotate(0); border-color: var(--accent); background: linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0.055)); }
-.venture-index { font-family: 'Space Mono', monospace; font-size: 0.58rem; color: var(--accent); padding-top: 0.35rem; }
-.venture-content { position: relative; z-index: 1; }
-.venture-status { font-family: 'Space Mono', monospace; font-size: 0.55rem; letter-spacing: 1.5px; color: var(--accent); text-transform: uppercase; }
-.venture-name { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 0.95; margin-top: 0.65rem; }
-.venture-note { color: #AAA9A2; font-size: 0.8rem; line-height: 1.55; margin-top: 0.7rem; max-width: 370px; }
-.venture-arrow { color: var(--accent); font-size: 1.3rem; position: relative; z-index: 1; }
-.venture-chip { grid-column: 2/4; justify-self: start; font-family: 'Space Mono', monospace; font-size: 0.52rem; letter-spacing: 1px; color: #777770; text-transform: uppercase; }
-
-.role-card .role-body { min-height: 0; }
-.role-open { color: var(--green); }
-.role-btn:hover { background: var(--white); border-color: var(--white); color: var(--black); }
-
-.final-question { font-family: 'Bebas Neue', sans-serif; font-size: clamp(6rem, 18vw, 17rem); line-height: 0.8; margin-top: 2rem; }
-.final-copy { max-width: 900px; margin: 0 auto; font-size: clamp(2rem, 5vw, 5rem); line-height: 1.08; font-weight: 300; }
-
-@media (max-width: 900px) {
-  nav { padding: 1rem 1.3rem; }
-  .nav-links { display: none; }
-  .slide { padding: 6rem 1.4rem 4rem; min-height: auto; }
-  #s1, #s9 { min-height: 100vh; }
-  .missed-grid, .project-grid { grid-template-columns: repeat(2, 1fr); }
-  .future-grid, .audience-grid { grid-template-columns: repeat(2, 1fr); }
-  .ventures-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-  .venture-stage { min-height: 540px; }
-  .slide-nav { display: none; }
-}
-@media (max-width: 560px) {
-  body { cursor: auto; }
-  .cursor, .cursor-ring { display: none; }
-  .hero-title { font-size: clamp(4rem, 20vw, 6.5rem); }
-  .missed-grid, .future-grid, .audience-grid, .project-grid, .roles-grid { grid-template-columns: 1fr; }
-  .swap-row { grid-template-columns: 1fr 32px 1fr; }
-  .swap-arrow { font-size: 0.7rem; }
-  footer.site-footer { padding: 3rem 1.4rem 2rem; }
-  .hero-logo { width: min(520px, 88vw); }
-  .hero-reference { font-size: 0.52rem; line-height: 1.8; }
-  .hero-title { font-size: clamp(2.4rem, 12vw, 4rem); }
-  .venture-stage { min-height: auto; display: grid; gap: 0.8rem; }
-  .venture-card { position: relative; width: 100%; min-height: 180px; transform: none; border-radius: 18px; }
-  .venture-card:hover { transform: translateY(-4px); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
-}
 </style>
 </head>
 <body>
@@ -858,178 +691,424 @@ footer.site-footer {
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="progress" id="progress"></div>
 
-<nav class="launch-nav">
-  <a class="nav-logo" href="#hero" aria-label="dotBro home"><img src="logo.svg" alt="dotBro"></a>
+<nav>
+  <a class="nav-logo" href="#s1">
+    <span class="nav-dot"></span>BRO
+  </a>
   <div class="nav-links">
-    <a href="#problem">Why</a>
-    <a href="#future">Coming Soon</a>
-    <a href="#projects">Projects</a>
-    <a href="#community">Contribute</a>
+    <a href="#s2">Context</a>
+    <a href="#s3">Relax Bro</a>
+    <a href="#s5">Num.Bro</a>
+    <a href="#s7">Vision</a>
+    <a href="#sroles">Builders</a>
+    <a href="#sroadmap">Roadmap</a>
+    <a href="#s8">Founder</a>
   </div>
-  <a class="nav-badge" href="#community" style="text-decoration:none;color:var(--white)">FOUNDING COMMUNITY →</a>
+  <div class="nav-badge">ALOKARA · 2026</div>
 </nav>
 
 <div class="slide-nav" id="slideNav"></div>
 
-<!-- ══ LAUNCH STORY ══ -->
-<section class="slide" id="hero">
-  <div class="float-el" style="font-size:24rem;top:3%;right:-4%;--dur:9s">?</div>
-  <div class="float-el" style="font-size:9rem;bottom:10%;left:4%;--dur:7s;--delay:1s">●</div>
+<!-- ══ SLIDE 1: COVER ══ -->
+<section class="slide" id="s1">
+  <div class="float-el" style="font-size:20rem;top:10%;right:-5%;--dur:8s">?</div>
+  <div class="float-el" style="font-size:8rem;bottom:15%;left:5%;--dur:6s;--delay:1s">●</div>
   <div class="s1-inner">
-    <div class="hero-reference">Himshikhar Entrepreneurship Program · IIT Mandi</div>
-    <img class="hero-logo" src="logo.svg" alt="dotBro">
-    <div class="hero-tagline">Stitch as per the crisis.</div>
-    <div class="reference-pills" aria-label="dotBro ventures">
-      <a class="reference-pill red" href="#projects">Relax Bro</a>
-      <a class="reference-pill green" href="https://num-bro.vercel.app" target="_blank" rel="noopener">Num.Bro</a>
+    <div style="font-family:'Space Mono',monospace;font-size:0.7rem;color:#D10000;letter-spacing:4px;margin-bottom:1rem">HIMSHIKHAR ENTREPRENEURSHIP PROGRAM · IIT MANDI</div>
+    <div class="bro-giant glitch" data-text=".BRO">.BRO</div>
+    <div class="tagline">Stitch as per the crisis.</div>
+    <div class="product-pills">
+      <div class="pill-rb">Relax Bro</div>
+      <div class="pill-nb">Num.Bro</div>
     </div>
-    <div class="hero-attribution">Sudipta Nandi · Founder · Under Alokara</div>
-    <h1 class="hero-title">Some conversations deserve another chance.</h1>
-    <p class="hero-story">You left the lecture. You walked away from the café. You overheard an amazing discussion. You thought, <strong>“I wish I had joined.”</strong><br>dotBro gives that conversation another chance.</p>
-    <div class="cta-row">
-      <a class="primary-cta" href="#community">I’m In</a>
-      <a class="secondary-cta" href="#community">Become a Founding Contributor</a>
-    </div>
+    <div class="founder-tag">Sudipta Nandi · Founder · Under Alokara</div>
   </div>
-  <div class="scroll-hint">KEEP THE CONVERSATION GOING</div>
+  <div class="scroll-hint">SCROLL</div>
 </section>
 
-<section class="slide" id="problem">
+<!-- ══ SLIDE 2: CONTEXT ══ -->
+<section class="slide" id="s2">
   <div class="s2-inner">
-    <div class="section-label reveal">What gets missed</div>
-    <h2 class="s2-headline reveal reveal-delay-1">The people and ideas<br>were already there.</h2>
-    <p class="s2-sub reveal reveal-delay-2">The moment passed before anyone found a way in.</p>
-    <div class="missed-grid reveal reveal-delay-3">
-      <div class="word-card"><span>01</span>Questions</div><div class="word-card"><span>02</span>Ideas</div><div class="word-card"><span>03</span>Collaborators</div>
-      <div class="word-card"><span>04</span>Mentors</div><div class="word-card"><span>05</span>Professors</div><div class="word-card"><span>06</span>Communities</div>
-      <div class="word-card"><span>07</span>Research</div><div class="word-card"><span>08</span>Friendships</div><div class="word-card"><span>09</span>Co-founders</div>
+    <div class="section-label reveal">The Context</div>
+    <div class="s2-headline reveal reveal-delay-1">Mandi is not just<br>a campus town.</div>
+    <div class="s2-sub reveal reveal-delay-2">A landslide-prone, remotely connected, underserved hill district — where daily gaps become crises fast.</div>
+    <div class="crisis-cards reveal reveal-delay-3">
+      <div class="crisis-card">
+        <div class="crisis-icon">🏔️</div>
+        <div class="crisis-head">Landslide-prone region</div>
+        <div class="crisis-body">Road cuts, supply chain breaks, isolated communities during monsoon. Trusted local networks matter more than apps.</div>
+      </div>
+      <div class="crisis-card">
+        <div class="crisis-icon">📦</div>
+        <div class="crisis-head">E-commerce dead zone</div>
+        <div class="crisis-body">Amazon & Flipkart reach the highway. The last mile — from town to IIT Kamand and village homes — is completely broken.</div>
+      </div>
+      <div class="crisis-card">
+        <div class="crisis-icon">🏫</div>
+        <div class="crisis-head">Campus cut off</div>
+        <div class="crisis-body">IIT Mandi at Kamand is 15km from town. Students wait days for deliveries that could take hours with the right network.</div>
+      </div>
+      <div class="red-bar">.BRO exists to stitch these gaps — using trusted local people, not platforms.</div>
     </div>
-    <p class="truth-line reveal reveal-delay-4">Not because they don’t exist.<br><strong>Because they never connect.</strong></p>
   </div>
 </section>
 
-<section class="slide" id="vision">
+<!-- ══ SLIDE 3: RELAX BRO ══ -->
+<section class="slide" id="s3">
+  <div class="s3-inner">
+    <div>
+      <div class="section-label reveal" style="color:#D10000">Product 01</div>
+      <div class="big-rb reveal reveal-delay-1">
+        <div class="rb-white">RELAX</div>
+        <div class="rb-red">BRO.</div>
+      </div>
+      <div class="s3-tagline reveal reveal-delay-2">You text. Bro handles it.</div>
+    </div>
+    <div class="s3-services reveal reveal-delay-2">
+      <div class="service-row card-3d">
+        <div class="srv-num">01</div>
+        <div class="srv-icon">🍞</div>
+        <div class="srv-text"><h4>Campus food delivery</h4><p>WhatsApp-first. Hostel room delivery.</p></div>
+        <div class="srv-tag">LIVE</div>
+      </div>
+      <div class="service-row card-3d">
+        <div class="srv-num">02</div>
+        <div class="srv-icon">📦</div>
+        <div class="srv-text"><h4>Amazon / Flipkart last mile</h4><p>Town to IIT Kamand, campus to door.</p></div>
+        <div class="srv-tag" style="background:#E05000">EXPANDING</div>
+      </div>
+      <div class="service-row card-3d">
+        <div class="srv-num">03</div>
+        <div class="srv-icon">🛵</div>
+        <div class="srv-text"><h4>Empowering local delivery boys</h4><p>Connectors, not couriers. Micro-entrepreneurs.</p></div>
+        <div class="srv-tag" style="background:#333">CORE</div>
+      </div>
+      <div class="service-row card-3d">
+        <div class="srv-num">04</div>
+        <div class="srv-icon">🆘</div>
+        <div class="srv-text"><h4>Crisis response logistics</h4><p>Landslide routes. Local people. Real trust.</p></div>
+        <div class="srv-tag" style="background:#555">VISION</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SLIDE 4: HOW IT WORKS ══ -->
+<section class="slide" id="s4">
   <div class="s4-inner">
-    <div class="section-label reveal">A different kind of network</div>
-    <h2 class="s2-headline reveal reveal-delay-1">Less performance.<br>More possibility.</h2>
-    <div class="swap-list reveal reveal-delay-2">
-      <div class="swap-row"><div class="swap-from">Feeds</div><div class="swap-arrow">→</div><div class="swap-to">Graphs</div></div>
-      <div class="swap-row"><div class="swap-from">Followers</div><div class="swap-arrow">→</div><div class="swap-to">Conversations</div></div>
-      <div class="swap-row"><div class="swap-from">Likes</div><div class="swap-arrow">→</div><div class="swap-to">Collaborations</div></div>
-      <div class="swap-row"><div class="swap-from">Scrolling</div><div class="swap-arrow">→</div><div class="swap-to">Projects</div></div>
+    <div class="section-label reveal">How Relax Bro Works</div>
+    <div class="steps-row reveal reveal-delay-1">
+      <div class="step-card">
+        <div class="step-num-circle">1</div>
+        <div class="step-icon">📱</div>
+        <div class="step-head">Text Bro</div>
+        <div class="step-body">WhatsApp in Hindi or English. Any item — food, package, grocery.</div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num-circle">2</div>
+        <div class="step-icon">🤖</div>
+        <div class="step-head">AI confirms</div>
+        <div class="step-body">Agent reads intent, confirms order, price and time. Auto-logged.</div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num-circle">3</div>
+        <div class="step-icon">🔔</div>
+        <div class="step-head">Local notified</div>
+        <div class="step-body">Nearest trusted delivery partner gets the ping — knows Mandi.</div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num-circle">4</div>
+        <div class="step-icon">🛵</div>
+        <div class="step-head">Pickup & deliver</div>
+        <div class="step-body">Partner collects from cafe, warehouse, or Amazon locker.</div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num-circle">5</div>
+        <div class="step-icon">✅</div>
+        <div class="step-head">Done.</div>
+        <div class="step-body">Cash collected. Logged. Partner paid. Record kept.</div>
+      </div>
+    </div>
+    <div class="connector-bar reveal reveal-delay-2">We are connectors, not couriers. Local people. Local knowledge. Real trust.</div>
+  </div>
+</section>
+
+<!-- ══ SLIDE 5: NUM.BRO ══ -->
+<section class="slide" id="s5">
+  <div class="float-el" style="font-size:30rem;right:-10%;top:-10%;color:var(--green);--dur:10s;--delay:0.5s">₹</div>
+  <div class="s5-inner" style="position:relative;z-index:2">
+    <div class="section-label green reveal">Product 02</div>
+    <div class="nb-headline reveal reveal-delay-1">NUM.BRO</div>
+    <div class="nb-sub reveal reveal-delay-1">Your Bro for the Numbers</div>
+    <div class="nb-tagline reveal reveal-delay-2">Stop the spreadsheet mess. Record it, Num.BRO keeps it — every rupee, forever, only for you.</div>
+    <div class="nb-features reveal reveal-delay-3">
+      <div class="nb-feat">
+        <div class="nb-feat-icon">📵</div>
+        <div class="nb-feat-head">Works without internet</div>
+        <div class="nb-feat-body">Everything saved on your phone the moment you tap save. Quietly backs up to cloud.</div>
+      </div>
+      <div class="nb-feat">
+        <div class="nb-feat-icon">⏱️</div>
+        <div class="nb-feat-head">History, one tap away</div>
+        <div class="nb-feat-body">Every entry dated and categorised. Look back weeks or years — your book is always ready.</div>
+      </div>
+      <div class="nb-feat">
+        <div class="nb-feat-icon">🧮</div>
+        <div class="nb-feat-head">No calculator needed</div>
+        <div class="nb-feat-body">Type "500×3+200" straight into the amount — it solves instantly.</div>
+      </div>
+      <div class="nb-feat">
+        <div class="nb-feat-icon">🔒</div>
+        <div class="nb-feat-head">Built for trust</div>
+        <div class="nb-feat-body">No ads, no tracking, no selling. Your data belongs to you only.</div>
+      </div>
+      <div class="nb-feat">
+        <div class="nb-feat-icon">🔁</div>
+        <div class="nb-feat-head">Atomic transfers</div>
+        <div class="nb-feat-body">One tap. Both sides updated. Zero half-states. Fully reversible.</div>
+      </div>
+      <div class="nb-feat">
+        <div class="nb-feat-icon">📡</div>
+        <div class="nb-feat-head">Recording live</div>
+        <div class="nb-feat-body">Every tap becomes a permanent record — the book you'll always wish you'd kept.</div>
+      </div>
+    </div>
+    <a href="https://num-bro.vercel.app" target="_blank" class="nb-cta reveal reveal-delay-4">OPEN THE SYSTEM →</a>
+  </div>
+</section>
+
+<!-- ══ SLIDE 6: ECOSYSTEM ══ -->
+<section class="slide" id="s6">
+  <div class="s6-inner">
+    <div class="section-label reveal">The .BRO Ecosystem</div>
+    <div class="s6-headline reveal reveal-delay-1">Two products.<br>One mission.</div>
+    <div style="font-size:0.95rem;color:var(--gray);margin-bottom:0.5rem;font-style:italic" class="reveal reveal-delay-2">Solve real problems for real people — with trusted local people.</div>
+    <div class="eco-grid reveal reveal-delay-3" style="position:relative">
+      <div class="eco-card eco-rb">
+        <div class="eco-header">RELAX BRO</div>
+        <div class="eco-point"><div class="eco-dot"></div>WhatsApp-first campus delivery</div>
+        <div class="eco-point"><div class="eco-dot"></div>Amazon / Flipkart last-mile to Kamand</div>
+        <div class="eco-point"><div class="eco-dot"></div>Empowering local delivery boys as micro-entrepreneurs</div>
+        <div class="eco-point"><div class="eco-dot"></div>Crisis logistics in landslide-prone Mandi region</div>
+        <div class="eco-url">9547727143 · WhatsApp</div>
+      </div>
+      <div class="eco-card eco-nb">
+        <div class="eco-header">NUM.BRO</div>
+        <div class="eco-point"><div class="eco-dot"></div>Personal finance recordkeeping — no spreadsheets</div>
+        <div class="eco-point"><div class="eco-dot"></div>Works offline, syncs to cloud automatically</div>
+        <div class="eco-point"><div class="eco-dot"></div>Built for families, teams, and small businesses</div>
+        <div class="eco-point"><div class="eco-dot"></div>Inline calculator — type expressions, get answers</div>
+        <div class="eco-url">num-bro.vercel.app</div>
+      </div>
+      <div class="eco-plus">+</div>
     </div>
   </div>
 </section>
 
-<section class="slide" id="future">
-  <div class="s2-inner">
-    <div class="section-label green reveal">What dotBro will become</div>
-    <h2 class="s2-headline reveal reveal-delay-1">Small openings.<br>Real outcomes.</h2>
-    <div class="future-grid reveal reveal-delay-2">
-      <div class="future-card card-3d"><div class="future-num">01</div><div class="future-name">Anonymous Questions</div><div class="coming">Coming Soon</div></div>
-      <div class="future-card card-3d"><div class="future-num">02</div><div class="future-name">Campus Communities</div><div class="coming">Coming Soon</div></div>
-      <div class="future-card card-3d"><div class="future-num">03</div><div class="future-name">Knowledge Graph</div><div class="coming">Coming Soon</div></div>
-      <div class="future-card card-3d"><div class="future-num">04</div><div class="future-name">Research Network</div><div class="coming">Coming Soon</div></div>
-      <div class="future-card card-3d"><div class="future-num">05</div><div class="future-name">Projects</div><div class="coming">Coming Soon</div></div>
-      <div class="future-card card-3d"><div class="future-num">06</div><div class="future-name">Meetups</div><div class="coming">Coming Soon</div></div>
-      <div class="future-card card-3d"><div class="future-num">07</div><div class="future-name">Mentorship</div><div class="coming">Coming Soon</div></div>
-      <div class="future-card card-3d"><div class="future-num">08</div><div class="future-name">The next conversation</div><div class="coming">Coming Soon</div></div>
+<!-- ══ SLIDE 7: VISION ══ -->
+<section class="slide" id="s7">
+  <div class="s7-inner">
+    <div class="section-label reveal">The Vision</div>
+    <div class="vision-headline reveal reveal-delay-1">Stitch as per<br>the crisis.</div>
+    <div class="vision-sub reveal reveal-delay-2">Every location has a different gap. Our job is to identify it, deploy a trusted local network, and solve it — fast.</div>
+    <div class="scenario-grid reveal reveal-delay-3">
+      <div class="scenario">
+        <div class="scenario-top" style="background:var(--red)"></div>
+        <div class="scenario-loc" style="color:var(--red)">IIT MANDI · KAMAND</div>
+        <div class="scenario-prob">Campus cut off from town</div>
+        <div class="scenario-sep"></div>
+        <div class="scenario-sol">Relax Bro delivers food, packages, and essentials to hostel rooms.</div>
+      </div>
+      <div class="scenario">
+        <div class="scenario-top" style="background:var(--red)"></div>
+        <div class="scenario-loc" style="color:var(--red)">MANDI TOWN</div>
+        <div class="scenario-prob">Local vendors with no digital reach</div>
+        <div class="scenario-sep"></div>
+        <div class="scenario-sol">Relax Bro connects them to campus and community customers.</div>
+      </div>
+      <div class="scenario">
+        <div class="scenario-top" style="background:#E05000"></div>
+        <div class="scenario-loc" style="color:#E05000">MANDI · MONSOON</div>
+        <div class="scenario-prob">Landslides cut supply chains</div>
+        <div class="scenario-sep"></div>
+        <div class="scenario-sol">Bro network knows routes, people, and priorities — becomes a lifeline.</div>
+      </div>
+      <div class="scenario">
+        <div class="scenario-top" style="background:var(--green)"></div>
+        <div class="scenario-loc" style="color:var(--green)">ANY CAMPUS · INDIA</div>
+        <div class="scenario-prob">Same gap, different city</div>
+        <div class="scenario-sep"></div>
+        <div class="scenario-sol">License the model. Deploy locally. Scale nationally across 1000+ campuses.</div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="slide" id="people">
-  <div class="s2-inner">
-    <div class="section-label reveal">Who this is for</div>
-    <h2 class="s2-headline reveal reveal-delay-1">Anyone still willing<br>to ask why.</h2>
-    <div class="audience-grid reveal reveal-delay-2">
-      <div class="audience-card">Students</div><div class="audience-card">Professors</div><div class="audience-card">Researchers</div><div class="audience-card">Founders</div><div class="audience-card">Engineers</div>
-      <div class="audience-card">Designers</div><div class="audience-card">Creators</div><div class="audience-card">Builders</div><div class="audience-card">Open Source Contributors</div><div class="audience-card">Everyone curious.</div>
-    </div>
-  </div>
-</section>
-
-<section class="slide" id="projects">
-  <div class="ventures-layout">
-    <div class="ventures-copy">
-      <div class="section-label reveal">The venture stack</div>
-      <h2 class="s2-headline reveal reveal-delay-1">Different experiments.<br>One instinct: help.</h2>
-      <p class="s2-sub reveal reveal-delay-2">Every venture keeps its own identity. Together, they form the Alokara stack.</p>
-    </div>
-    <div class="venture-stage reveal reveal-delay-3" aria-label="All ventures">
-      <article class="venture-card" style="--i:0;--accent:#F5F5F0;--accent-soft:rgba(245,245,240,0.14)">
-        <span class="venture-index">01</span><div class="venture-content"><div class="venture-status">Building now</div><div class="venture-name">dotBro</div><p class="venture-note">A home for conversations that should not end when the moment does.</p></div><span class="venture-arrow">→</span><div class="venture-chip">Conversation network</div>
-      </article>
-      <article class="venture-card" style="--i:1;--accent:#FF1A1A;--accent-soft:rgba(209,0,0,0.22)">
-        <span class="venture-index">02</span><div class="venture-content"><div class="venture-status">Existing venture</div><div class="venture-name">Relax Bro</div><p class="venture-note">A local-first experiment in making help feel close, human, and immediate.</p></div><span class="venture-arrow">→</span><div class="venture-chip">Local help · trusted people</div>
-      </article>
-      <a class="venture-card" href="https://num-bro.vercel.app" target="_blank" rel="noopener" style="--i:2;--accent:#E2EE00;--accent-soft:rgba(200,212,0,0.18)">
-        <span class="venture-index">03</span><div class="venture-content"><div class="venture-status">Live venture</div><div class="venture-name">Num.Bro</div><p class="venture-note">A quiet, offline-first way to keep personal financial records clear.</p></div><span class="venture-arrow">↗</span><div class="venture-chip">Personal records · offline-first</div>
-      </a>
-      <article class="venture-card" style="--i:3;--accent:#9B87FF;--accent-soft:rgba(155,135,255,0.18)">
-        <span class="venture-index">04</span><div class="venture-content"><div class="venture-status">Parent studio</div><div class="venture-name">Alokara</div><p class="venture-note">The wider home for thoughtful, useful experiments—including every Bro venture.</p></div><span class="venture-arrow">→</span><div class="venture-chip">Independent venture studio</div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="slide" id="community">
+<!-- ══ SLIDE: OPEN ROLES / BUILDERS ══ -->
+<section class="slide" id="sroles">
   <div class="sroles-inner">
-    <div class="section-label reveal">Founding Community</div>
-    <h2 class="sroles-headline reveal reveal-delay-1">We’re not hiring.<br>We’re co-founding.</h2>
-    <p class="sroles-sub reveal reveal-delay-2">Don’t join as a user. Help shape the questions, the culture, and the first useful version.</p>
+    <div class="section-label reveal">We're Looking For Builders</div>
+    <div class="sroles-headline reveal reveal-delay-1">Not hiring.<br>Co-founding.</div>
+    <div class="sroles-sub reveal reveal-delay-2">We're not posting a job. We're looking for people who want to build something meaningful, from Mandi, with skin in the game.</div>
     <div class="roles-grid reveal reveal-delay-3">
-      <div class="role-card card-3d"><div class="role-head">Frontend</div><div class="role-row"><span class="role-open">Founding Contributor</span><button class="role-btn" onclick="openRoleModal('Frontend')">I’m In</button></div></div>
-      <div class="role-card card-3d"><div class="role-head">Backend</div><div class="role-row"><span class="role-open">Founding Contributor</span><button class="role-btn" onclick="openRoleModal('Backend')">I’m In</button></div></div>
-      <div class="role-card card-3d"><div class="role-head">AI</div><div class="role-row"><span class="role-open">Founding Contributor</span><button class="role-btn" onclick="openRoleModal('AI')">I’m In</button></div></div>
-      <div class="role-card card-3d"><div class="role-head">ML</div><div class="role-row"><span class="role-open">Founding Contributor</span><button class="role-btn" onclick="openRoleModal('ML')">I’m In</button></div></div>
-      <div class="role-card card-3d"><div class="role-head">Research</div><div class="role-row"><span class="role-open">Founding Contributor</span><button class="role-btn" onclick="openRoleModal('Research')">I’m In</button></div></div>
-      <div class="role-card card-3d"><div class="role-head">Design</div><div class="role-row"><span class="role-open">Founding Contributor</span><button class="role-btn" onclick="openRoleModal('Design')">I’m In</button></div></div>
-      <div class="role-card card-3d"><div class="role-head">Community</div><div class="role-row"><span class="role-open">Founding Contributor</span><button class="role-btn" onclick="openRoleModal('Community')">I’m In</button></div></div>
-      <div class="role-card card-3d"><div class="role-head">Professor</div><div class="role-row"><span class="role-open">Founding Contributor</span><button class="role-btn" onclick="openRoleModal('Professor')">I’m In</button></div></div>
-      <div class="role-card card-3d"><div class="role-head">Student</div><div class="role-row"><span class="role-open">Founding Contributor</span><button class="role-btn" onclick="openRoleModal('Student')">I’m In</button></div></div>
-      <div class="role-card card-3d"><div class="role-head">Advisor</div><div class="role-row"><span class="role-open">Founding Contributor</span><button class="role-btn" onclick="openRoleModal('Advisor')">I’m In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">Software Engineer</div><div class="role-body">Full-stack systems thinking — ship fast without breaking trust.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('Software Engineer')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">Frontend Engineer</div><div class="role-body">Interfaces that feel as fast as a WhatsApp text.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('Frontend Engineer')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">Backend Engineer</div><div class="role-body">Infrastructure that holds up across landslide season.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('Backend Engineer')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">AI Engineer</div><div class="role-body">Building the WhatsApp agent that reads intent, not just text.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('AI Engineer')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">ML Engineer</div><div class="role-body">Modeling demand, routes, and trust across the local network.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('ML Engineer')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">Product Designer</div><div class="role-body">Shaping the calm, trusted feel of every Bro product.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('Product Designer')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">Motion Designer</div><div class="role-body">Giving the brand the same energy it has on the street.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('Motion Designer')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">UI/UX Designer</div><div class="role-body">Making the system simple enough for a first-time user in Hindi or English.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('UI/UX Designer')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">Research Scientist</div><div class="role-body">Studying how trust actually spreads through a hill-town network.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('Research Scientist')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">Professor</div><div class="role-body">Bringing rigor and mentorship to an early-stage venture.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('Professor')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">Student Researcher</div><div class="role-body">Testing the system with the people it's actually built for.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('Student Researcher')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">Community Builder</div><div class="role-body">Turning delivery partners and early users into a real network.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('Community Builder')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">Startup Advisor</div><div class="role-body">Helping us skip the mistakes you've already made once.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('Startup Advisor')">I'm In</button></div></div>
+      <div class="role-card card-3d"><div class="role-head">Open Source Contributor</div><div class="role-body">Building in the open, with people who do the same.</div><div class="role-row"><span class="role-open">OPEN POSITION</span><button class="role-btn" onclick="openRoleModal('Open Source Contributor')">I'm In</button></div></div>
     </div>
   </div>
 </section>
 
-<section class="slide" id="principles">
+<!-- ══ SLIDE: ROADMAP ══ -->
+<section class="slide" id="sroadmap">
+  <div class="sroadmap-inner">
+    <div class="section-label green reveal">Roadmap</div>
+    <div class="sroadmap-headline reveal reveal-delay-1">Now to<br>everywhere.</div>
+    <div class="reveal reveal-delay-2">
+      <div class="road-row">
+        <div class="road-stage active">Now</div>
+        <div class="road-dot-col"><div class="road-dot active"></div></div>
+        <div><h4>Live in Mandi</h4><p>Relax Bro running on WhatsApp. Num.Bro live at num-bro.vercel.app.</p></div>
+      </div>
+      <div class="road-row">
+        <div class="road-stage">Next</div>
+        <div class="road-dot-col"><div class="road-dot"></div></div>
+        <div><h4>Prototype the AI agent</h4><p>Automating order intake, confirmation, and dispatch end to end.</p></div>
+      </div>
+      <div class="road-row">
+        <div class="road-stage">Then</div>
+        <div class="road-dot-col"><div class="road-dot"></div></div>
+        <div><h4>Early community</h4><p>A core group of delivery partners, vendors, and users shaping the system.</p></div>
+      </div>
+      <div class="road-row">
+        <div class="road-stage">Later</div>
+        <div class="road-dot-col"><div class="road-dot"></div></div>
+        <div><h4>University pilots</h4><p>Bring the model to other hill-town and remote campuses across India.</p></div>
+      </div>
+      <div class="road-row">
+        <div class="road-stage">Future</div>
+        <div class="road-dot-col"><div class="road-dot"></div></div>
+        <div><h4>Public beta</h4><p>Open the network beyond Mandi to the next district.</p></div>
+      </div>
+      <div class="road-row">
+        <div class="road-stage">Vision</div>
+        <div class="road-dot-col"><div class="road-dot"></div></div>
+        <div><h4>1000+ campuses</h4><p>One stitched network, licensed and deployed locally, nationwide.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SLIDE: PHILOSOPHY ══ -->
+<section class="slide" id="sphil">
   <div class="phil-inner">
     <div class="section-label reveal" style="justify-content:center;display:flex">Philosophy</div>
-    <div class="phil-line reveal reveal-delay-1"><b>Curiosity</b> over popularity.</div>
-    <div class="phil-line reveal reveal-delay-1"><b>Knowledge</b> over algorithms.</div>
+    <div class="phil-line reveal reveal-delay-1"><b>Real problems</b> over fake metrics.</div>
+    <div class="phil-line reveal reveal-delay-1"><b>Local trust</b> over platforms.</div>
     <div class="phil-line reveal reveal-delay-2"><b>Builders</b> over spectators.</div>
-    <div class="phil-line reveal reveal-delay-2"><b>Questions</b> over assumptions.</div>
-    <div class="phil-line reveal reveal-delay-3"><b>Contribution</b> over attention.</div>
+    <div class="phil-line reveal reveal-delay-2"><b>Action</b> over pitch decks.</div>
+    <div class="phil-line reveal reveal-delay-3">Long-term <b>trust</b> over short-term scale.</div>
   </div>
 </section>
 
-<section class="slide" id="finale">
-  <div class="s1-inner">
-    <p class="final-copy reveal">Imagine if every missed conversation could continue.</p>
-    <div class="final-question reveal reveal-delay-1">Are you in?</div>
-    <div class="cta-row reveal reveal-delay-2"><a class="primary-cta" href="mailto:hello@dotbro.in?subject=I%20want%20to%20help%20build%20dotBro">Let’s Build dotBro</a></div>
-  </div>
-</section>
-
-<!-- ══ SLIDE 1: COVER ══ -->
-<!-- ══ SLIDE 2: CONTEXT ══ -->
-<!-- ══ SLIDE 3: RELAX BRO ══ -->
-<!-- ══ SLIDE 4: HOW IT WORKS ══ -->
-<!-- ══ SLIDE 5: NUM.BRO ══ -->
-<!-- ══ SLIDE 6: ECOSYSTEM ══ -->
-<!-- ══ SLIDE 7: VISION ══ -->
-<!-- ══ SLIDE: OPEN ROLES / BUILDERS ══ -->
-<!-- ══ SLIDE: ROADMAP ══ -->
-<!-- ══ SLIDE: PHILOSOPHY ══ -->
 <!-- ══ SLIDE 8: FOUNDER ══ -->
+<section class="slide" id="s8">
+  <div class="s8-inner">
+    <div class="founder-visual">
+      <div class="sn-circle reveal">SN</div>
+      <div class="founder-name reveal reveal-delay-1">Sudipta Nandi</div>
+      <div class="founder-role reveal reveal-delay-2">FOUNDER · .BRO · IIT MANDI</div>
+      <div class="founder-brands reveal reveal-delay-3">Relax Bro · Num.Bro · Alokara</div>
+    </div>
+    <div>
+      <div class="section-label reveal" style="color:var(--red)">The Founder</div>
+      <p class="story-text reveal reveal-delay-1">Started with a ₹500 Himshikhar project. The problem was too real to leave as a weekend experiment.<br><br>I saw students hungry with no options. I saw local boys in Mandi looking for work. I saw vendors with great food and no reach. Landslide roads cutting off communities.<br><br>.BRO is the answer — not one product, but a network that stitches the gaps wherever they appear.</p>
+      <div class="cofound-box reveal reveal-delay-2">
+        <div class="cofound-title">Looking for a Co-Founder</div>
+        <div class="cofound-trait"><div class="ct-dot"></div>Tech-savvy — can build the WhatsApp AI agent and SaaS dashboard</div>
+        <div class="cofound-trait"><div class="ct-dot"></div>Campus-obsessed — believes India's universities deserve better</div>
+        <div class="cofound-trait"><div class="ct-dot"></div>Mission-aligned — wants to build, not just launch</div>
+        <div class="build-line">Let's build it from Mandi.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ══ SLIDE 9: CLOSE ══ -->
+<section class="slide" id="s9">
+  <div class="float-el" style="font-size:25rem;left:-5%;top:10%;--dur:9s">●</div>
+  <div class="s9-inner" style="position:relative;z-index:2">
+    <div class="close-big reveal">We still build it.<br>We just go faster<br>with you.</div>
+    <div class="close-sub reveal reveal-delay-1">— SUDIPTA NANDI · .BRO · ALOKARA</div>
+    <div class="close-products reveal reveal-delay-2">
+      <div class="close-rb">
+        <div class="close-prod-name">RELAX BRO</div>
+        <div class="close-prod-url">9547727143 · WhatsApp</div>
+        <div class="close-prod-desc">Campus delivery · Last-mile · Crisis logistics</div>
+      </div>
+      <div class="close-nb">
+        <div class="close-prod-name">NUM.BRO</div>
+        <div class="close-prod-url">num-bro.vercel.app</div>
+        <div class="close-prod-desc">Personal finance · No spreadsheets · Offline-first</div>
+      </div>
+    </div>
+    <div class="sign-off reveal reveal-delay-3">Bro ne kar diya. 🤙</div>
+    <div class="alokara-tag reveal reveal-delay-4">ALOKARA</div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">.BRO</div>
+      <p>dotBro — Stitch as per the crisis.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h5>dotBro</h5>
+        <a href="#s7">Vision</a>
+        <a href="#sroadmap">Roadmap</a>
+        <a href="#sroles">Contributors</a>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <a href="#">GitHub</a>
+        <a href="#">Socials</a>
+        <a href="#">Newsletter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 dotBro · ALOKARA</span>
+    <span>BUILT FROM MANDI</span>
+  </div>
+</footer>
+
 <div class="modal-overlay" id="roleModalOverlay">
   <div class="modal-box">
     <button class="modal-close" onclick="closeRoleModal()">✕</button>
-    <div class="section-label">Founding Community</div>
+    <div class="section-label">Open Position</div>
     <h3 id="roleModalTitle">Role</h3>
-    <p>This is an invitation to help shape dotBro from the beginning—not a job application. Tell us what you are curious about and what you would love to build.</p>
+    <p>This is an early, founding-team role under dotBro — built around equity in the idea, not a job description. Send us a line about what you'd want to build and we'll reach out.</p>
     <div class="modal-actions">
       <a class="modal-cta" href="mailto:hello@dotbro.in">Email Us</a>
       <button class="modal-cancel" onclick="closeRoleModal()">Close</button>
